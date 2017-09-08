@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Toilet Quotes</string>
+    <string name="descr">A man on the toilet is able to get curious about shampoo label, we offer a lot more!\n \nChoose prefered category, press start and get random quote!</string>
+
+    <array name="categories">
+        <item>Philosoph</item>
+        <item>Lyrics</item>
+        <item>Jokes</item>
+
+    </array>
+</resources>

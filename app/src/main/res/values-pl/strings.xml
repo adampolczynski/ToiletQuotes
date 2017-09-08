@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Toilet Quotes</string>
+    <string name="descr">Człowiek na tronie jest w stanie zainteresować się etykietą szamponu, oferujemy o wiele więcej!\n \nWybierz preferowaną kategorię, wciśnij start i uzyskaj losowy cytat!</string>
+
+    <array name="categories">
+        <item>Filozofia</item>
+        <item>Teksty</item>
+        <item>Żarty</item>
+
+    </array>
+</resources>

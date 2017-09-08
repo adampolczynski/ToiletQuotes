@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/darker_gray">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hitech.apolczynski.toi_toy.MainActivity"
+        android:orientation="vertical"
+        android:background="@drawable/bg_pattern">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/app_name"
+            android:layout_weight="0.2"
+            android:textAlignment="gravity"
+            android:textSize="34sp"
+            android:gravity="center"
+            style="@style/TextStyle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.65"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/b_start"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/b_selector"
+                android:background="@null" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_descr"
+                android:text="@string/descr"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                style="@style/TextStyle"
+                android:layout_toRightOf="@+id/b_start"
+                android:layout_alignParentBottom="true"
+                android:layout_width="170dp"
+                android:layout_below="@+id/spinner" />
+
+            <Spinner
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:entries="@array/categories"
+                android:background="@drawable/bg_spinner"
+                android:gravity="center_vertical|center|start"
+                android:textAlignment="gravity"
+                android:popupBackground="@drawable/bg_spinner_dropdown"
+                android:paddingRight="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/b_start"
+                android:layout_toEndOf="@+id/b_start"
+                android:layout_width="170dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+</FrameLayout>
